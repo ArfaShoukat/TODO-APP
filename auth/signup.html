@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./auth.js"></script>  
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<style>
+
+body {
+
+font-family: sans-serif;
+margin: 0 50px;
+background-color: #e5e5e5;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-size: cover;
+    background-image: url("https://t3.ftcdn.net/jpg/05/07/34/36/240_F_507343640_aFRe4OtbwHm02AvcIlhiKMcxG9F5sbrB.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+   
+    color: rgb(255, 255, 255);
+  
+}
+  /* body{
+  background-image: url("https://t3.ftcdn.net/jpg/05/07/34/36/240_F_507343640_aFRe4OtbwHm02AvcIlhiKMcxG9F5sbrB.jpg");
+  background-repeat: no-repeat;
+
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+ 
+  
+} */
+#field{
+  background-image: url("https://t3.ftcdn.net/jpg/05/07/34/36/240_F_507343640_aFRe4OtbwHm02AvcIlhiKMcxG9F5sbrB.jpg");
+    /* border: 2 px solid rgb(13, 35, 231) !important;  */
+   box-shadow: 10px 10px 5px rgb(74, 74, 75); 
+width : 30%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+border: 2px solid #2b29aa;
+border-radius: 8px;
+height: 500px;
+}
+#btn{
+ width: auto;
+ background-color: rgb(2, 2, 36);
+}
+</style>
+<body >
+ 
+<div id="field" class="container mt-5">
+    <div class="form-floating "> <br><br>
+        <h2 class="text-center">Signup</h2>  <br> <br>
+        <div >
+          <label for="email" >Email address</label> <br>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        
+      </div> <br>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="password">
+      </div> <br>
+    
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
+        <input type="confirmPassword" class="form-control" id="confirmPassword" placeholder="password">
+      </div>
+      <div> <button id="btn" onclick='signup()' type="button" class="btn btn-primary d-grid col-4 mx-auto mt-2" >Signup</button></div>
+    
+</div>
+
+
+
+</div>
+
+
+<!-- <div>  <button id="redirectToSignin">Go to Signin</button></div> -->
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
+
